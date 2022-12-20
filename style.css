@@ -1,0 +1,219 @@
+html{
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+p{
+    line-height: 2em;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+}
+
+.nav-item a{
+    color:white;
+}
+
+#top-section{
+    color: aliceblue;
+    background-image: url(/images/x-sLGYaQ_stMM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: #fff;
+    border-bottom: 1px white solid;
+    transition: background-color  0.8s ease;
+    background-color: rgba(255, 255, 255, 0.153);
+}
+
+.navbar #nav-collapsed{
+    color: white;
+}
+
+.navbar .navbar-nav .active {
+    color: #ffc0d7;
+    border: 1px #ffc0d7 solid;
+}
+
+#top-book-now-button{
+    border-bottom: 1px white solid;
+    border-radius: 0;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+    color: white;
+}
+
+#top-book-now-button:hover{
+    transition: background-color  0.8s ease;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+/* TREATMENT SECTION */
+#treatment-section{
+    min-height: 900px;
+}
+#treatment-content{
+    min-height: 60vh;
+}
+
+#card-group-row .option{
+    justify-content: center;
+}
+.option .img-container{
+    width: 240px;
+    height: 240px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 811px){
+    .option .img-container{
+        width: 179px;
+        height: 179px;
+    }
+}
+
+@media (max-width: 574px){
+    .option .img-container{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+.option .img-container .back-img, .front-img-container{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+
+
+.option .img-container:hover .front-img{
+    transform: scale(1.1);
+}
+
+.option .img-container .front-img{
+	transition: .3s ease-in-out;
+}
+
+.option .img-container .front-img-container{
+    bottom: 0%;
+    right: 0%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.option .img-container .back-img{
+    top: 0%;
+    left: 0%;
+    z-index: 0;
+}
+
+.btn-treatment, #btn-form{
+    border-radius: 0;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+}
+
+.btn-treatment:hover, #btn-form:hover{
+    color: white !important;
+    background-color: black !important;
+}
+
+#treatment-section{
+    position: relative;
+    z-index: 1;
+}
+
+#treatment-section::before{
+    content: " ";
+    position: absolute;
+    width: 100%; 
+    height: 100%;  
+    opacity: .2; 
+    z-index: -1;
+    background-image: url(https://images.unsplash.com/photo-1636525653613-2a3a05c00759?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80);
+}
+
+/* IMAGE GALERY SECTION */
+
+#galery-section{
+    height: 50vh;
+}
+
+#galery-section .row{
+    margin-top: 3%;
+    background-image: url(https://images.unsplash.com/photo-1531924224004-7beee12117a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80);
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-position: 30% 0;
+    height: 60vh;
+}
+
+#image-galery-button{
+    border-bottom: 1px white solid;
+    border-radius: 0;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+    color: white;
+}
+
+#galery-section .row #image-galery-button:hover{
+    background-color: white;
+    color: black !important;
+}
+
+@media (max-height: 1300px){
+    #galery-section, #galery-section .row{
+        min-height: 600px !important;
+    }
+
+    #galery-black-widget{
+        min-height: 400px !important;
+    }
+}
+
+@media (max-width: 577px){
+    #galery-black-widget #text-container{
+        padding: 0 !important;
+        margin: 50px 0 0 0 !important;
+        text-align: center !important;
+    }
+
+    #galery-black-widget{
+        width: 95%;
+    }
+
+    #galery-section .row{
+        justify-content: center;
+    }
+}
+
+/* CONTACT FORM SECTION */
+
+#contact-form-section{
+    height: 50vh;
+    background-image: url(https://images.unsplash.com/photo-1502323777036-f29e3972d82f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 576px) {
+    #contact-form-section{
+        min-height: 800px;
+    }
+}
+
+.form-bg{
+    background-color: #ffffff88;
+}
+
+#btn-form{
+    border-bottom: 1px black solid;
+}
